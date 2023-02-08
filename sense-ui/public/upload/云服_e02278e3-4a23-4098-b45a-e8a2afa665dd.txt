@@ -1,0 +1,33 @@
+部署服务器：
+【CentOS7.5】 
+IP地址：81.71.92.9 账号：root  密码：Sense@123
+【MYSQL】
+gz-cdb-3lyg9wkr.sql.tencentcdb.com
+端口：59330
+账号：root
+密码：Sense@123
+【Redis】
+# 地址
+host: 81.71.92.9
+# 端口 
+port: 6379
+# 密码
+password: 123456
+
+注意事项：部署目录在/home下建立一个“自己名称”的文件夹、数据库也是建立一个“自己名称”的数据库
+
+门户
+【公司云服务器Linux】
+139.196.252.217    1141
+root/Sense@123
+【公司的外网数据库】
+139.196.252.217
+3306
+root
+Password@1
+【公司的外网redis】
+139.196.252.217
+6379
+Passw0rd
+
+

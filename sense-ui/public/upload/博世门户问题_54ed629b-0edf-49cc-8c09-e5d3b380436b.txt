@@ -1,0 +1,13 @@
+剩余需求
+1：剩余批量下载附件功能
+2：用户选择部门时只有一个自动默认使用
+
+服务器运行jar包所在位置
+/home/Boschportal/app/iam-app/dist  PC前端部署路径
+/home/Boschportal/app/iam-app/sense-admin.jar PC后端部署路径
+/home/Boschportal/app/iam-mobile/dist 移动端部署服务路径
+
+
+本地测试
+移动端前端需要改动 src/permission.js 文件注释正式服 改动为测试服
+PC端前端需要改动

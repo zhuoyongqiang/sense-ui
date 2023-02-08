@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragram" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" id="view" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>logo.png">
+    <title></title>
+	  <style>
+        html,
+        body,
+        #app {
+          height: 100%;
+          margin: 0px;
+          padding: 0px;
+        }
+        /* @media screen and (max-device-width: 640px) {
+          body {
+            overflow: hidden;
+          }
+        } */
+        #loader-wrapper{
+          position: fixed;margin:auto;top:0;bottom:0;left:0;right:0;width:140px;height:140px;
+          z-index: 99999;
+          -webkit-animation:rotateIndex 1.4s linear infinite;
+          -moz-animation:rotateIndex 1.4s linear infinite;
+          -o-animation:rotateIndex 1.4s linear infinite;
+          animation:rotateIndex 1.4s linear infinite;
+        }
+        #loader-wrapper .dot {
+          position:absolute;margin:auto;width:46px;height:46px;
+          -webkit-transition:all 1.4s ease;
+          -moz-transition:all 1.4s ease;
+          -o-transition:all 1.4s ease;
+          transition:all 1.4s ease;
+        }
+        #loader-wrapper .dot:nth-child(n+2) {
+          background-size: 100% 100%;
+          background-position: left bottom;
+          background-repeat: no-repeat;
+        }
+
+        #loader-wrapper .dot:nth-child(2) {
+          background-image: url('/logo/1.png');
+          top:0;bottom:0;left:0;
+          transform: rotate(230deg);
+          -webkit-animation:dotsY 1.4s linear infinite;
+          -moz-animation:dotsY 1.4s linear infinite;
+          -o-animation:dotsY 1.4s linear infinite;
+          animation:dotsY 1.4s linear infinite;
+        }
+        #loader-wrapper .dot:nth-child(3) {
+          background-image: url('/logo/2.png');
+          left:0;right:0;top:0;
+          transform: rotate(-45deg);
+          -webkit-animation:dotsX 1.4s linear infinite;
+          -moz-animation:dotsX 1.4s linear infinite;
+          -o-animation:dotsX 1.4s linear infinite;
+          animation:dotsX 1.4s linear infinite;
+        }
+        #loader-wrapper .dot:nth-child(4) {
+          background-image: url('/logo/3.png');
+          top:0;bottom:0;right:0;
+          transform: rotate(45deg);
+          -webkit-animation:dotsY 1.4s linear infinite;
+          -moz-animation:dotsY 1.4s linear infinite;
+          -o-animation:dotsY 1.4s linear infinite;
+          animation:dotsY 1.4s linear infinite;
+        }
+        #loader-wrapper .dot:nth-child(5) {
+          background-image: url('/logo/4.png');
+          left:0;right:0;bottom:0;
+          transform: rotate(-225deg);
+          -webkit-animation:dotsX 1.4s linear infinite;
+          -moz-animation:dotsX 1.4s linear infinite;
+          -o-animation:dotsX 1.4s linear infinite;
+          animation:dotsX 1.4s linear infinite;
+        }
+        @keyframes rotateIndex {
+          0% {
+            -webkit-transform:rotate( 0 );
+            -moz-transform:rotate( 0 );
+            -o-transform:rotate( 0 );
+            transform:rotate( 0 );
+          }
+          10% {
+            /* width:140px;
+            height:140px; */
+            -webkit-transform:rotate( 36deg ) scale(1);
+            -moz-transform:rotate( 36deg ) scale(1);
+            -o-transform:rotate( 36deg ) scale(1);
+            transform:rotate( 36deg ) scale(1);
+          }
+          66% {
+            /* width:46px;
+            height:46px; */
+            -webkit-transform:rotate( 237deg ) scale(.3);
+            -moz-transform:rotate( 237deg ) scale(.3);
+            -o-transform:rotate( 237deg ) scale(.3);
+            transform:rotate( 237deg ) scale(.3);
+          }
+          100% {
+            -webkit-transform:rotate(360deg) scale(1);
+            -moz-transform:rotate(360deg) scale(1);;
+            -o-transform:rotate(360deg) scale(1);;
+            transform:rotate(360deg) scale(1);;
+            /* width:140px;
+            height:140px; */
+          }
+        }
+
+        @keyframes dotsY {
+          66% {
+            opacity:.1;
+            /* width: 46px; */
+          }
+          77% {
+            opacity:1;
+            /* width:0; */
+          }
+        }
+
+        @keyframes dotsX {
+          66% {
+            opacity:.1;
+            /* height:46px; */
+          }
+          77% {
+            opacity:1;
+            /* height:0; */
+          }
+        }
+
+        @keyframes flash {
+          33% {
+            opacity:0;
+            border-radius:0%;
+          }
+          55% {
+            opacity:.6;
+            border-radius:100%;
+          }
+          66% {
+            opacity:0;
+          }
+        }
+      </style>
+
+  </head>
+  <body>
+    <div id="app">
+
+    </div>
+    <div id="loader-wrapper" style="display: block">
+      <div class="dot white"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-- <script src="https://cdn.bootcss.com/vConsole/3.3.4/vconsole.min.js"></script> -->
+    <script type="text/javascript">
+      localStorage.setItem('ifversion', '0')
+    // var vConsole = new VConsole();
+      String.prototype.endWith=function(endStr){
+	        var d=this.length-endStr.length;
+	        return (d>=0&&this.lastIndexOf(endStr)==d);
+      }
+  	  if(window.location.href.endWith("/extends/oa") || window.location.href.endWith("/extends/oa/")){
+        document.getElementById("loader-wrapper").style.display = 'none';
+  	  } else {
+        document.getElementById("loader-wrapper").style = '';
+      }
+      var ua = navigator.userAgent.toLowerCase();
+      if (ua.match(/wxwork/i) == 'wxwork') {
+        //如果是企业微信打开的页面
+        document.title="加载中...";
+      } else {
+        document.title= "<%= webpackConfig.name %>";
+      }
+    </script>
+  </body>
+</html>

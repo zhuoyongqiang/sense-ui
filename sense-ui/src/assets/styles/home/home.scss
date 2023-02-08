@@ -1,0 +1,353 @@
+.home {
+  text-align: left;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+  /* width: 100%; */
+}
+
+.login {
+  height: 360px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 50px 30px;
+}
+
+.loginTitle > h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.codeLogin {
+  text-align: center;
+}
+
+.codeLogin > img {
+  margin: 60px 0 20px 0;
+}
+
+.codeLogin > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #767676;
+}
+
+.codeLogin > p > span {
+  color: #2272DE;
+}
+
+.otherLogin > span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333333;
+  width: 68px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  background: url("~@/../src/assets/images/home/img_tipsbg.png");
+  background-size: 100% 100%;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.otherLogin > img {
+  cursor: pointer;
+}
+
+.idLogin input {
+  margin-top: 20px;
+  padding-left: 42px;
+  border: 1px solid #DDDDDD;
+}
+
+::v-deep .el-icon-users {
+  background-image: url("~@/../src/assets/images/home/icon_user.png");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 5px 30px;
+}
+
+::v-deep .el-icon-userPassword {
+  background: url("~@/../src/assets/images/home/icon_password.png");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 5px 30px;
+}
+
+.idLogin a {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  color: #767676;
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+}
+
+.window {
+  height: 300px;
+}
+
+.windowImg {
+  width: 350px;
+  height: 210px;
+  margin-right: 20px;
+}
+
+.windowList {
+  width: 370px;
+  margin-top: 8px;
+}
+
+.windowImg > div {
+  width: 100%;
+  height: 100%;
+}
+
+.windowImg .el-carousel__container {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.windowImg .el-carousel__indicators--horizontal {
+  right: -27px;
+  left: auto;
+}
+
+.zhe {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.windowTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  width: 67%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  margin-right: 10px;
+  display: inline-block;
+  max-height: 44px;
+}
+
+.windowTime {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+  width: calc(33% - 10px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+.windowActive span:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.windowList li:hover .windowTitle {
+  color: #2272DE !important;
+}
+
+.windowList li {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.loginDays {
+  background: url("~@/../src/assets/images/home/img_card_bg.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 85px;
+}
+
+.loginDays > h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  padding: 15px 0 8px 20px;
+}
+
+.loginDays > p {
+  font-size: 30px;
+  font-family: Gilroy-Bold, Gilroy;
+  font-weight: bold;
+  color: #2272DE;
+  padding-left: 20px;
+}
+
+.loginDays > p > span {
+  font-size: 14px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #333333;
+  position: relative;
+  top: -4px;
+}
+
+.process ul {
+  padding: 35px 30px 0 30px;
+}
+
+.processMian ul > li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.processMian ul > li:hover img,
+.app ul li:hover img {
+  position: relative;
+  top: -5px;
+}
+
+.processMian ul > li > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2D314C;
+  margin-top: 10px;
+}
+
+.app .el-carousel__item ul {
+  padding: 30px;
+}
+
+.app .el-carousel__item ul li {
+  float: left;
+  width: 25%;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.app ul li > p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.bankerPadding, .financeMain .el-carousel__item,
+.seashellPadding {
+  padding: 20px;
+}
+
+.bankerNews {
+  margin-right: 20px;
+  width: calc(100% - 177px);
+  cursor: pointer;
+}
+
+.bankerNews:hover h3 {
+  color: #2272DE;
+}
+
+.bankerNews > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.bankerNews > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #797979;
+  margin: 10px 0;
+  max-height: 60px;
+}
+
+.bankerNews > .more {
+  text-align: center;
+  display: block;
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 16px;
+  border: 1px solid #0B86F1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0B86F1;
+  margin-top: 20px;
+}
+
+.userName {
+  margin-left: 10px;
+}
+
+.userName > h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  width: 235px;
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  margin-right: 10px;
+  max-height: 44px;
+}
+
+.userName > p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #999999;
+  line-height: 26px;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.seashellTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin: 10px 0 10px 0;
+  max-height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.seashellTitle > span {
+  color: #5B7FBF;
+}
+
+.seashellULImg li {
+  display: inline-block;
+  width: 32%;
+  overflow: hidden;
+}
+
+.seashellULImg li:nth-child(2) {
+  margin: 0 2%;
+}
+
+.seashellULImg li > img {
+  width: 100%;
+}
+
+.seashells {
+  height: 300px;
+}

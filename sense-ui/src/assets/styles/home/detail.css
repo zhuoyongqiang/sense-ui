@@ -1,0 +1,36 @@
+.article-content img {
+  max-width: 832px;
+}
+
+.comment_left{
+  width: 20%;
+  float: left;
+  min-height: 80px;
+}
+
+
+
+.comment_left>.avatar{
+  height: 32px;
+  width: 32px;
+  
+}
+.comment_left>.userinfo{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+}
+
+.comment_right{
+  float: right;
+  width: 79%;
+}
+.comment_right>.fabuTime{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  padding: 0px;
+  margin: 0px;
+}
